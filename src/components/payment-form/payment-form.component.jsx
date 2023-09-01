@@ -49,7 +49,7 @@ const PaymentForm = () => {
         setIsProcessingPayment(false);
 
         if(paymentResult.error) {
-            alert(paymentResult.error);
+            alert("Payment Failed");
         } else {
             if(paymentResult.paymentIntent.status === 'succeeded') {
                 alert('Payment Successful');
